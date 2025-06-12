@@ -37,7 +37,7 @@ async function checkForUpdates() {
         // 获取最新版本
         let latestVersion;
         const VERSION_URL = {
-            PROXY: 'https://raw.ihtw.moe/raw.githubusercontent.com/zhangjiain/tvs1/main/VERSION.txt',
+            PROXY: 'https://raw.ihtw.moe/raw.githubusercontent.com/zhangjiain/TVS1/main/VERSION.txt',
             DIRECT: 'https://raw.githubusercontent.com/zhangjiain/tvs1/main/VERSION.txt'
         };
         const FETCH_TIMEOUT = 1500;
@@ -148,7 +148,7 @@ function addVersionInfoToFooter() {
                 const updateBtn = versionElement.querySelector('span');
                 if (updateBtn) {
                     updateBtn.addEventListener('click', () => {
-                        window.open('https://github.com/zhangjiain/vs1', '_blank');
+                        window.open('https://github.com/zhangjiain/tvs1', '_blank');
                     });
                 }
             }, 100);

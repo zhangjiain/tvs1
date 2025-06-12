@@ -16,16 +16,6 @@
     <script src="libs/tailwindcss.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
-    <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?6a9dbbe7025171af204e14d2cb9ed0d7";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 </head>
 <body class="page-bg text-white">
     <!-- 将历史记录按钮移到左上角，并缩小尺寸 -->
@@ -413,7 +403,7 @@ var _hmt = _hmt || [];
         }
     }
     </script>
-
+    
     <!-- 引入纯 JS sha256（HTTP 下依然可用） -->
     <script src="libs/sha256.min.js"></script>
     <script>
@@ -425,6 +415,7 @@ var _hmt = _hmt || [];
     <script src="js/api.js"></script>
     <script src="js/douban.js"></script>
     <script src="js/password.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/app.js"></script>
 
     <!-- PWA 注册 -->
@@ -438,6 +429,7 @@ var _hmt = _hmt || [];
         // 注入服务器端环境变量 (将由服务器端替换)
         // PASSWORD 变量将在这里被服务器端注入
         window.__ENV__.PASSWORD = "{{PASSWORD}}";
+        window.__ENV__.ADMINPASSWORD = "{{ADMINPASSWORD}}";
     </script>
 
     <!-- 版本检测脚本 -->
